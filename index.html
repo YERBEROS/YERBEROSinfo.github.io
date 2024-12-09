@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yerberos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        .section {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botón de traducir -->
+    <button id="translate-btn">Traducir</button>
+
+    <header class="header">
+        <div class="menu container">
+            <nav class="navbar">
+                <button class="menu-toogle" arial-label="Toogle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="menu-list">
+                    <li><a href="#" id="about-us-link">Acerca de Nosotros</a></li>
+                    <li><a href="#" id="products-link">Productos</a></li>
+                    <li><a href="#" id="contacto-link">Contáctanos</a></li>
+                    <li><a href="#" id="faq-link">Preguntas Frecuentes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="about-us" class="section">
+            <div class="image-about">
+                <img src="IMG/circle.png" alt="">
+            </div>
+            <h2>Acerca de Nosotros</h2>
+            <p>"El Libro de Herbolaria: Conociendo el Poder de las Plantas Medicinales" es una guía completa y accesible para todos aquellos interesados en el mundo de las hierbas curativas. Este libro ofrece un enfoque práctico y detallado sobre cómo utilizar las plantas medicinales para mejorar tu bienestar, desde remedios caseros hasta infusiones terapéuticas.</p>
+            <h3>Misión</h3>
+            <p>Proporcionar a las personas herramientas accesibles y efectivas para mejorar su bienestar a través del uso de plantas medicinales, fomentando el respeto por la naturaleza y el conocimiento ancestral.</p>
+            <h3>Visión</h3>
+            <p>Convertirnos en un referente global en la educación sobre plantas medicinales, promoviendo su uso seguro y efectivo para el cuidado de la salud en todas las etapas de la vida.</p>
+       </div>
+
+        <div id="products" class="section">
+            <h2>Productos</h2>
+            <p>¿Estás buscando una forma natural de mejorar tu bienestar? Este libro te enseña cómo puedes incorporar las plantas medicinales en tu vida diaria, ofreciendo soluciones desde la prevención hasta el tratamiento de enfermedades comunes.</p>
+            <div class="imag-products">
+                <img src="IMG/lectura.jpg" alt="">
+                <img src="IMG/caled.avif" alt="">
+                <img src="IMG/f1.jpg" alt="">
+            </div>
+           
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contáctanos</h2>
+            <p>¡Conéctate con nosotros en nuestras redes sociales!</p>
+            <div class="image-grid">
+                <div>
+                    <img src="IMG/Whats.png" alt="WhatsApp">
+                    <br>
+                    <a href="https://wa.me/523316937494" target="_blank">
+                        <button>¡Haz clic aquí para saber más!</button>
+                    </a>
+                </div>
+                <div>
+                    <img src="IMG/PRUEBA.png" alt="Facebook">
+                    <br>
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank">
+                        <button>¡Haz clic aquí para saber más!</button>
+                    </a>
+                </div>
+                <div>
+                    <img src="IMG/yerberos (5).png" alt="Instagram">
+                    <br>
+                    <a href="https://www.instagram.com/tu_cuenta" target="_blank">
+                        <button>¡Haz clic aquí para saber más!</button>
+                    </a>
+                </div>
+                <div>
+                    <img src="IMG/gmail.png" alt="Gmail">
+                    <br>
+                    <a href="mailto:yerberosinfo@gmail.com">
+                        <button>¡Haz clic aquí para saber más!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq" class="section">
+            <h2>Preguntas Frecuentes</h2>
+            <h4>¿Qué aprenderé en este libro?</h4>
+            <p>Aprenderás sobre las propiedades medicinales de las plantas.</p>
+            <h4>¿Qué información incluye este libro de herbolaria?</h4>
+            <p>El libro contiene descripciones detalladas de plantas medicinales, sus usos terapéuticos, propiedades, formas de preparación y posibles contraindicaciones.</p>
+            <h4>¿Cómo puedo adquirir el libro a través de WhatsApp?</h4>
+            <p>Es muy sencillo. Solo envíanos un mensaje al número [número de WhatsApp] con la palabra clave "Herbolaria", y uno de nuestros asesores te ayudará con el proceso de compra.</p>
+            <h4>¿Es adecuado para principiantes en el tema de herbolaria?</h4>
+            <p>Sí, el libro está diseñado tanto para principiantes como para quienes ya tienen conocimientos básicos sobre plantas medicinales.</p>
+            <h4>¿Incluye recetas para preparar remedios caseros?</h4>
+            <p>Sí, encontrarás recetas fáciles de seguir para preparar tés, ungüentos, infusiones y más.</p>
+            <h4>¿Es seguro usar las plantas medicinales que se mencionan?</h4>
+            <p>Aunque el libro ofrece orientación basada en fuentes confiables, siempre se recomienda consultar a un profesional de la salud antes de usar cualquier remedio herbal, especialmente si estás embarazada, lactando o tomando medicamentos.</p>
+            <h4>¿Está disponible en formato digital?</h4>
+            <p>Sí, el libro está disponible tanto en formato PDF. </p>
+        </div>
+    </main>
+
+    <script>
+        // Traducción de contenido
+        const translations = {
+            'Acerca de Nosotros': 'About Us',
+            'Productos': 'Products',
+            'Contáctanos': 'Contact Us',
+            'Preguntas Frecuentes': 'FAQs',
+            'Misión': 'Mission',
+            'Visión': 'Vision',
+            'Proporcionar a las personas herramientas accesibles y efectivas para mejorar su bienestar a través del uso de plantas medicinales, fomentando el respeto por la naturaleza y el conocimiento ancestral.': 'Provide people with accessible and effective tools to improve their well-being through the use of medicinal plants, fostering respect for nature and ancestral knowledge.',
+            'Convertirnos en un referente global en la educación sobre plantas medicinales, promoviendo su uso seguro y efectivo para el cuidado de la salud en todas las etapas de la vida.': 'To become a global reference in education about medicinal plants, promoting their safe and effective use for health care at all stages of life.',
+            '¿Estás buscando una forma natural de mejorar tu bienestar? Este libro te enseña cómo puedes incorporar las plantas medicinales en tu vida diaria, ofreciendo soluciones desde la prevención hasta el tratamiento de enfermedades comunes.': 'Are you looking for a natural way to improve your well-being? This book teaches you how to incorporate medicinal plants into your daily life, offering solutions from prevention to treatment of common illnesses.',
+            '¡Conéctate con nosotros en nuestras redes sociales!': 'Connect with us on our social media!',
+            '¡Haz clic aquí para saber más!': 'Click here to learn more!',
+            'Preguntas Frecuentes': 'Frequently Asked Questions',
+            'Aprenderás sobre las propiedades medicinales de las plantas.': 'You will learn about the medicinal properties of plants.',
+            'El libro contiene descripciones detalladas de plantas medicinales, sus usos terapéuticos, propiedades, formas de preparación y posibles contraindicaciones.': 'The book contains detailed descriptions of medicinal plants, their therapeutic uses, properties, preparation methods, and possible contraindications.',
+            'Es muy sencillo. Solo envíanos un mensaje al número [número de WhatsApp] con la palabra clave "Herbolaria", y uno de nuestros asesores te ayudará con el proceso de compra.': 'It is very simple. Just send us a message to [WhatsApp number] with the keyword "Herbolaria", and one of our advisors will help you with the purchase process.',
+            'Sí, el libro está diseñado tanto para principiantes como para quienes ya tienen conocimientos básicos sobre plantas medicinales.': 'Yes, the book is designed for both beginners and those who already have basic knowledge of medicinal plants.',
+            'Sí, encontrarás recetas fáciles de seguir para preparar tés, ungüentos, infusiones y más.': 'Yes, you will find easy-to-follow recipes to prepare teas, ointments, infusions, and more.',
+            'Aunque el libro ofrece orientación basada en fuentes confiables, siempre se recomienda consultar a un profesional de la salud antes de usar cualquier remedio herbal, especialmente si estás embarazada, lactando o tomando medicamentos.': 'Although the book offers guidance based on reliable sources, it is always recommended to consult a healthcare professional before using any herbal remedy, especially if you are pregnant, breastfeeding, or taking medications.',
+            'Sí, el libro está disponible tanto en formato PDF.': 'Yes, the book is available in PDF format.'
+        };
+
+        // Traducción de la barra de navegación
+        const navTranslations = {
+            'Acerca de Nosotros': 'About Us',
+            'Productos': 'Products',
+            'Contáctanos': 'Contact Us',
+            'Preguntas Frecuentes': 'FAQs',
+            'Traducir': 'Translate',
+            'Volver al Español': 'Back to Spanish'
+        };
+
+        let isTranslated = false;
+
+        function toggleLanguage() {
+            if (isTranslated) {
+                document.querySelectorAll('h2, p').forEach(element => {
+                    const originalText = element.getAttribute('data-original');
+                    if (originalText) {
+                        element.innerText = originalText;
+                    }
+                });
+
+                document.querySelectorAll('.navbar a').forEach(link => {
+                    const originalText = link.getAttribute('data-original');
+                    if (originalText) {
+                        link.innerText = originalText;
+                    }
+                });
+
+                document.getElementById('translate-btn').innerText = 'Traducir';
+            } else {
+                document.querySelectorAll('h2, p').forEach(element => {
+                    const text = element.innerText.trim();
+                    if (translations[text]) {
+                        element.setAttribute('data-original', text);
+                        element.innerText = translations[text];
+                    }
+                });
+
+                document.querySelectorAll('.navbar a').forEach(link => {
+                    const text = link.innerText.trim();
+                    if (navTranslations[text]) {
+                        link.setAttribute('data-original', text);
+                        link.innerText = navTranslations[text];
+                    }
+                });
+
+                document.getElementById('translate-btn').innerText = 'Back to Spanish';
+            }
+            isTranslated = !isTranslated;
+        }
+
+        document.getElementById('translate-btn').addEventListener('click', toggleLanguage);
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        document.getElementById('about-us-link').addEventListener('click', () => showSection('about-us'));
+        document.getElementById('products-link').addEventListener('click', () => showSection('products'));
+        document.getElementById('contacto-link').addEventListener('click', () => showSection('contact'));
+        document.getElementById('faq-link').addEventListener('click', () => showSection('faq'));
+
+        showSection('about-us');
+    </script>
+
+<footer>
+    <p>&copy; 2024 Herbolarios.com</p>
+</footer>
+
+</body>
+</html>

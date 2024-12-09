@@ -1,0 +1,1104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url('IMG/hierb.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+    will-change: transform; /* Optimiza el rendimiento */
+    background-attachment: fixed; /* Fijar la imagen al hacer scroll */
+}
+
+/* Animación de carga de la página */
+body {
+    animation: cargarPagina 2s ease-in-out;
+  }
+  
+  @keyframes cargarPagina {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+.information-content img {
+    width: 100%;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .t1 {
+    animation-name: neonGlow;
+  }
+  
+  .t2 {
+    animation-name: neonGlow;
+  }
+  
+  @keyframes neonGlow {
+    0%, 100% {
+      filter: brightness(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    }
+    50% {
+      filter: brightness(1.5) drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+    }
+  }
+  
+ 
+
+.rotating-text-wrapper {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .rotating-text-wrapper h2 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0.3em;
+    color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+  }
+    
+
+.logo {
+    width: 100%; /* O el ancho necesario */
+}
+
+.logo img {
+    float: left; /* Mueve la imagen a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el contenido siguiente */
+    height: 170px; /* Tamaño de la imagen */
+}
+
+/* Estilos básicos de la barra de navegación */
+.navbar {
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
+    position: sticky; /* Barra fija al hacer scroll */
+    top: 0; /* Pegada al borde superior */
+    z-index: 1000; /* Siempre visible sobre otros elementos */
+}
+
+/* Estilos para la lista */
+.navbar ul {
+    list-style: none; /* Sin viñetas */
+    display: flex; /* Alineación horizontal */
+    gap: 20px; /* Espaciado entre elementos */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los enlaces */
+.navbar ul li a {
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Texto blanco */
+    font-size: 19px; /* Tamaño del texto */
+    font-weight: bold;
+    padding: 10px 15px; /* Espaciado interno */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de animación */
+}
+
+/* Efecto hover en los enlaces */
+.navbar ul li a:hover {
+    background-color: #3E8E41; /* Fondo más oscuro al pasar el ratón */
+    color: #FFF;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Alineación vertical */
+        gap: 10px; /* Menos espacio entre los elementos */
+    }
+
+    .navbar ul li a {
+        display: block; /* Ocupa todo el ancho */
+        text-align: center; /* Texto centrado */
+    }
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-txt, .about-txt1 {
+    flex: 1;
+    text-align: justify;
+}
+
+.about h2 {
+    color:#000;
+    margin-bottom: 20px;
+}
+
+.btn-2 {
+    display: inline-block;
+    background: #8fbc8f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Information Section */
+.information {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.information-content img {
+    width: 48%;
+    border-radius: 10px;
+    margin: 10px 1%;
+}
+
+/* Contact Section */
+.contact {
+    background: #6b8e23;
+    color: white;
+    padding: 40px 0;
+}
+
+.contact-content h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-content form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-content input, .contact-content textarea, .contact-content button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-content button {
+    background: #8fbc8f;
+    color: white;
+    font-weight: bold;
+}
+
+/* FAQ Section */
+.preg {
+    padding: 40px 0;
+}
+
+.preg h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.preg-item {
+    margin: 20px 0;
+}
+
+.preg-item h4 {
+    color: #6b8e23;
+}
+
+/* Footer */
+footer {
+    background:#2a7b45;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Estilo para los campos de texto */
+.controls {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el botón de envío */
+.botons {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.botons:hover {
+    background-color: #45a049;
+}
+
+
+.controls{
+    width: 100%;
+    background:rgb(238, 240, 237);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: "calibri";
+    font-size: 18px;
+}
+
+
+ .preg-item{
+    width: 90%;  /* Ajusta el ancho de la sección */
+    margin: 0 auto;  /* Centra la sección horizontalmente */
+    padding: 20px;
+}
+
+  
+  .btn-2, .botons {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-2:hover, .botons:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Contenedor de las imágenes */
+/* Contenedor de imágenes de productos */
+/* Contenedor principal de las imágenes */
+.product-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Contenedor individual de cada imagen */
+.product-img-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px; /* Limita el tamaño de las imágenes */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff; /* Fondo blanco para un mejor contraste */
+    padding: 10px; /* Espacio dentro del contenedor */
+}
+
+/* Estilo de las imágenes */
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que las imágenes se ajusten bien al contenedor */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* Efecto hover para las imágenes */
+.product-img-container:hover {
+    transform: scale(1.05); /* Ampliar el contenedor ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añadir sombra más fuerte */
+}
+
+/* Ampliar imagen al pasar el ratón */
+.product-img-container:hover .product-img {
+    transform: scale(1.1); /* Ampliar la imagen cuando se pasa el ratón */
+}
+
+/* Efecto de borde con gradiente */
+.product-img-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #4CAF50, #FF6347, #8A2BE2, #FFD700);
+    z-index: -1; /* Asegura que el borde esté detrás de la imagen */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-img-container:hover:before {
+    opacity: 1; /* Mostrar el borde al hacer hover */
+}
+
+/* Responsividad: Asegura que las imágenes se adapten bien a pantallas pequeñas */
+@media (max-width: 768px) {
+    .product-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-img-container {
+        width: 100%;
+        max-width: 350px; /* Limitar el tamaño máximo en dispositivos pequeños */
+    }
+}
+
+/* Responsividad adicional: Asegurar que en pantallas grandes las imágenes no sean pequeñas */
+@media (min-width: 1024px) {
+    .product-img-container {
+        max-width: 350px; /* Ajustar el tamaño de las imágenes en pantallas grandes */
+    }
+}
+
+
+/* Estilo general para la sección de Preguntas Frecuentes */
+#faq {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal de la sección */
+#faq h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #4A7C3F;
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada pregunta */
+.preg-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos para las preguntas (h4) */
+.preg-item h4 {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Estilo para las respuestas */
+.preg-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Efecto al pasar el mouse sobre la pregunta */
+.preg-item h4:hover {
+    color: #5A9A4A;
+    transition: color 0.3s ease;
+}
+
+/* Icono que aparecerá al lado de la pregunta */
+.preg-item h4::before {
+    content: "🔹";
+    position: absolute;
+    left: -25px;
+    top: 0;
+    font-size: 22px;
+    color: #5A9A4A;
+}
+
+/* Mejorar el espaciado entre preguntas y respuestas */
+.preg-item + .preg-item {
+    margin-top: 20px;
+}
+
+
+
+/* Estilo para el botón de traducir */
+#translate-btn {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Efecto de transición al pasar el mouse */
+    position: fixed; /* Fijar el botón en una posición específica */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px; /* Distancia desde el borde derecho */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+/* Cambiar el color de fondo al pasar el mouse */
+#translate-btn:hover {
+    background-color: #45a049;
+}
+
+#translate-btn {
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #f6f899, #80ea6f);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px; /* Botón redondeado */
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s;
+}
+
+#translate-btn:hover {
+  background: linear-gradient(90deg, #f6f899, #80ea6f);
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+.section {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.active {
+    opacity: 1;
+}
+
+/* Seleccionando el contenedor y personalizando la imagen */
+#contact img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible del contenedor */
+    max-width: 500px; /* Limita el ancho máximo a 500px */
+    height: auto; /* Mantén las proporciones originales */
+    display: block; /* Evita espacios extra alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 10px; /* Opcional: esquinas redondeadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para estilo */
+  }
+
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre imágenes */
+}
+
+.image-grid img {
+    width: calc(50% - 20px); /* Ajusta el ancho de cada imagen para caber dos por fila */
+    max-width: 300px; /* Limita el tamaño máximo si es necesario */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px;
+    align-items: start;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto; /* Deja que las imágenes mantengan su proporción */
+}
+
+.imag-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Columnas dinámicas según el ancho */
+    gap: 20px; /* Espaciado entre imágenes */
+    justify-items: center; /* Centra las imágenes en sus celdas */
+    padding: 20px;
+}
+
+.imag-products img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+    max-width: 200px; /* Tamaño máximo */
+    height: auto; /* Mantiene proporciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease; /* Animación suave */
+}
+
+.imag-products img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+
+
+  #about-us {
+    padding: 60px 30px;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    font-family: 'Lora', serif;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+ 
+  
+  #about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color:#000;
+  }
+  
+  #about-us h3 {
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+  }
+  
+  #about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 768px) {
+    #about-us h2 {
+      font-size: 2rem;
+    }
+  
+    #about-us h3 {
+      font-size: 1.5rem;
+    }
+  
+    #about-us p {
+      font-size: 1rem;
+    }
+  }
+
+  #about-us {
+    padding: 60px 30px;
+    background: url('IMG/herbs-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about-us .section-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro para mejor contraste con el texto */
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  #about-us h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  #about-us p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  #about-us {
+    padding: 60px 30px;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Color de texto predeterminado oscuro */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+  }
+  
+  #about-us h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color:#000; /* Verde para el título */
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+  
+  #about-us p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #666; /* Gris oscuro para los párrafos */
+  }
+  
+  #about-us .mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  #about-us .mission, #about-us .vision {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    width: 48%;
+    transition: transform 0.3s ease;
+  }
+  
+  #about-us .mission:hover, #about-us .vision:hover {
+    transform: translateY(-5px);
+  }
+  
+  #about-us .mission h3, #about-us .vision h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  #about-us .mission p, #about-us .vision p {
+    font-size: 1rem;
+    color: #555; /* Gris más claro para los textos dentro de las tarjetas */
+  }
+  
+  @media (max-width: 768px) {
+    #about-us .mission-vision {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #about-us .mission, #about-us .vision {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    #about-us h2 {
+      font-size: 2.5rem;
+    }
+  
+    #about-us p {
+      font-size: 1rem;
+    }
+  }
+  
+  #about-us {
+    padding: 60px 30px;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Color de texto predeterminado oscuro */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+  }
+  
+  #about-us h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color:#000; /* Verde para el título */
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+  
+  #about-us p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #666; /* Gris oscuro para los párrafos */
+  }
+  
+  #about-us .mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  #about-us .mission, #about-us .vision {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    width: 48%;
+    transition: transform 0.3s ease;
+  }
+  
+  #about-us .mission:hover, #about-us .vision:hover {
+    transform: translateY(-5px);
+  }
+  
+  #about-us .mission h3, #about-us .vision h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  #about-us .mission p, #about-us .vision p {
+    font-size: 1rem;
+    color: #555; /* Gris más claro para los textos dentro de las tarjetas */
+  }
+  
+  @media (max-width: 768px) {
+    #about-us .mission-vision {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #about-us .mission, #about-us .vision {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    #about-us h2 {
+      font-size: 2.5rem;
+    }
+  
+    #about-us p {
+      font-size: 1rem;
+    }
+  }
+  #about-us {
+    padding: 60px 30px;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Color de texto predeterminado oscuro */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+  }
+  
+  #about-us h2 {
+    font-size: 2rem; /* Tamaño de letra más pequeño para el título */
+    font-weight: 400;
+    color:#000; /* Verde para el título */
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  #about-us p {
+    font-size: 1rem; /* Párrafos más pequeños */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666; /* Gris oscuro para los párrafos */
+  }
+  
+  #about-us .mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio reducido entre las secciones */
+  }
+  
+  #about-us .mission, #about-us .vision {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 48%;
+    transition: transform 0.3s ease;
+  }
+  
+  #about-us .mission:hover, #about-us .vision:hover {
+    transform: translateY(-5px);
+  }
+  
+  #about-us .mission h3, #about-us .vision h3 {
+    font-size: 1.8rem; /* Tamaño de los subtítulos más pequeño */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  #about-us .mission p, #about-us .vision p {
+    font-size: 0.95rem; /* Texto más pequeño en las tarjetas */
+    color: #555; /* Gris más claro para los textos dentro de las tarjetas */
+  }
+  
+  @media (max-width: 768px) {
+    #about-us .mission-vision {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #about-us .mission, #about-us .vision {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    #about-us h2 {
+      font-size: 1.8rem; /* Título más pequeño en pantallas pequeñas */
+    }
+  
+    #about-us p {
+      font-size: 0.9rem; /* Párrafos más pequeños en pantallas pequeñas */
+    }
+  
+    #about-us .mission h3, #about-us .vision h3 {
+      font-size: 1.6rem; /* Subtítulos más pequeños en pantallas pequeñas */
+    }
+  
+    #about-us .mission p, #about-us .vision p {
+      font-size: 0.9rem; /* Texto más pequeño en pantallas pequeñas */
+    }
+  }
+    
+  .image-about img {
+    width: 150px; /* Cambia este valor al tamaño que necesites */
+    height: auto; /* Mantiene las proporciones originales de la imagen */
+    border-radius: 50%; /* Si quieres que la imagen sea circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra opcional */
+    margin: 10px; /* Espacio alrededor de la imagen */
+  }
+
+  /* General de la sección */
+#about-us {
+  font-family: 'Arial', sans-serif; /* Cambia la fuente según el estilo que prefieras */
+  color: #333; /* Color del texto */
+  line-height: 1.6; /* Espaciado entre líneas */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo claro para destacar */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Títulos */
+#about-us h2, 
+#about-us h3 {
+  color: #2a7b45; /* Color destacado para los títulos */
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+  margin-bottom: 10px;
+}
+
+/* Estilo de párrafos */
+#about-us p {
+  font-size: 16px; /* Tamaño del texto */
+  color: #555; /* Color gris oscuro para párrafos */
+  margin-bottom: 15px; /* Espacio entre párrafos */
+  text-align: justify; /* Justifica el texto */
+}
+
+/* Imagen */
+.image-about img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%; /* Hace la imagen circular */
+  display: block;
+  margin: 0 auto 20px auto; /* Centra la imagen */
+}
+
+.image-grid a button {
+  padding: 12px 30px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #f6f899, #80ea6f);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.image-grid a button:hover {
+  background: linear-gradient(90deg, #78f08e, #eef078);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaciado entre los botones */
+  flex-wrap: wrap; /* Asegura que los botones se acomoden en varias filas si es necesario */
+}
+
+.image-grid a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-grid a button {
+  padding: 12px 30px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #f6f899, #80ea6f);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.image-grid a button:hover {
+  background: linear-gradient(90deg, #78f08e, #eef078);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid a {
+  display: block;
+  text-align: center; /* Centra solo el contenido dentro del enlace */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual tamaño */
+  gap: 20px; /* Espacio entre las imágenes */
+}
+
+.image-grid a {
+  display: block;
+  text-align: center; /* Centra el contenido dentro del enlace */
+}
+
+.image-grid a button {
+  padding: 12px 30px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #f6f899, #80ea6f);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.image-grid a button:hover {
+  background: linear-gradient(90deg, #78f08e, #eef078);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Ocultar el menú en pantallas pequeñas por defecto */
+.menu-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-list li {
+  margin-right: 20px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .menu-list {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-list li {
+      padding: 10px 20px;
+      text-align: right;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .menu-list.show {
+      display: flex;
+  }
+}
